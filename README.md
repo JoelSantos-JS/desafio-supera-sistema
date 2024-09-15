@@ -1,4 +1,3 @@
-     <h1> Sistema de Gerenciamento de Tarefas </h1> 
 
 ```markdown
 # Sistema de Gerenciamento de Tarefas
@@ -55,7 +54,12 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 - **Criar Lista**
   - `POST /listas`
-  - Corpo da Requisição: `{"nome": "Nome da Lista"}`
+  - Corpo da Requisição: 
+    ```json
+    {
+      "nome": "Nome da Lista"
+    }
+    ```
   - Resposta: `201 Created`
 
 - **Obter Lista por ID**
@@ -68,7 +72,12 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 - **Atualizar Lista**
   - `PUT /listas/{id}`
-  - Corpo da Requisição: `{"nome": "Novo Nome da Lista"}`
+  - Corpo da Requisição: 
+    ```json
+    {
+      "nome": "Novo Nome da Lista"
+    }
+    ```
   - Resposta: `200 OK`
 
 - **Deletar Lista**
@@ -79,7 +88,13 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 - **Criar Item**
   - `POST /listas/{listaId}/itens`
-  - Corpo da Requisição: `{"nome": "Nome do Item", "estado": "Novo"}`
+  - Corpo da Requisição: 
+    ```json
+    {
+      "nome": "Nome do Item",
+      "estado": "Novo"
+    }
+    ```
   - Resposta: `200 OK`
 
 - **Obter Item por ID**
@@ -92,7 +107,13 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 - **Atualizar Item**
   - `PUT /listas/{listaId}/itens/{itemId}`
-  - Corpo da Requisição: `{"nome": "Novo Nome do Item", "estado": "Atualizado"}`
+  - Corpo da Requisição: 
+    ```json
+    {
+      "nome": "Novo Nome do Item",
+      "estado": "Atualizado"
+    }
+    ```
   - Resposta: `200 OK`
 
 - **Deletar Item**
@@ -118,11 +139,15 @@ Os testes cobrem operações CRUD para listas e itens, garantindo que o comporta
 
 ### Construir a Imagem Docker
 
+Crie a imagem Docker com o comando:
+
 ```bash
 docker build -t sistema-gerenciamento-tarefas .
 ```
 
 ### Executar o Contêiner Docker
+
+Execute o contêiner Docker com o comando:
 
 ```bash
 docker run -d -p 8080:8080 sistema-gerenciamento-tarefas
