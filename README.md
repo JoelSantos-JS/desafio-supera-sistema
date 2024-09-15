@@ -12,8 +12,6 @@ Um sistema de gerenciamento de tarefas desenvolvido com Spring Boot, que permite
 - [Endpoints da API](#endpoints-da-api)
 - [Testes](#testes)
 - [Docker](#docker)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ## Visão Geral
 
