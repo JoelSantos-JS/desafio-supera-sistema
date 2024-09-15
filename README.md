@@ -132,19 +132,3 @@ docker run -d -p 8080:8080 sistema-gerenciamento-tarefas
 
 A aplicação estará disponível em `http://localhost:8080` dentro do contêiner Docker.
 
-## Contribuição
-
-Contribuições são bem-vindas! Se você deseja contribuir para este projeto, por favor, siga estas etapas:
-
-1. Fork o repositório.
-2. Crie uma nova branch (`git checkout -b feature/MinhaNovaFuncionalidade`).
-3. Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
-4. Envie para o repositório remoto (`git push origin feature/MinhaNovaFuncionalidade`).
-5. Abra um Pull Request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
-```
-
-Sinta-se à vontade para ajustar qualquer seção conforme necessário para melhor refletir seu projeto e suas necessidades.
